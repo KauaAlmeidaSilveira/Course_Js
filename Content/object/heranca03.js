@@ -5,7 +5,7 @@ filho1.nome = 'Kaua'
 console.log(filho1.corCabelo)
 
 const filho2 = Object.create(pai, {
-    nome: {value: 'joao', writable: false, enumerable: true}
+    nome: {value: 'joao', writable: false, enumerable: true} //SE WRITABLE FOR FALSO O VALOR NÃO PODE SER ALTERADO
 })
 
 console.log(filho2.nome)

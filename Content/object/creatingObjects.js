@@ -9,12 +9,12 @@ console.log(obj2)
 // Funções construtoras
 function produto(nome, preco, desconto){
     this.nome = nome
-    this.getPrecoComDesconto = () => preco * (1 - 0.10)
+    this.getPrecoComDesconto = () => preco * (1 - desconto)
 }
 
 
 const p1 = new produto('teclado', 200, 0.15)
-const p2 = new produto('notebook', 2998.99, 0.25)
+const p2 = new produto('notebook', 200, 0.25)
 console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto())
 
 // Função factory
